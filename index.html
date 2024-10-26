@@ -9,16 +9,31 @@
     <meta name="keywords" content="HTML, CSS, JavaScript" />
     <meta name="author" content="Clement Hansel" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Clement Hansel Training Web</title>
+    <link rel="stylesheet" href="Index.css" />
+    <title>Fun Time | Training Web</title>
   </head>
   <body>
-    <div>
-      <video autoplay muted loop id="BgVideo">
-        <source src="Background1.mp4" type="video/mp4" />
+    <div class="header">
+      <video autoplay muted loop class="bg-vid">
+        <source src="Background1.mp4" />
         Your browser does not support HTML5 video.
       </video>
-      <div class="content">
+
+      <div class="nav">
+        <div class="Logo-text">FUNTIME</div>
+        <div class="search-box">
+          <input type="text" placeholder="Search.." />
+        </div>
+        <div class="nav-menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Tutorial.html">Tutorial</a></li>
+            <li><a href="Contactus.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="header-content">
         <h1>Welcome to Clement Hansel's Learning Journey!</h1>
         <p>
           This is a simple website created to demonstrate my learning experience
@@ -32,65 +47,71 @@
           Please feel free to follow my learning journey, and I hope you will
           have some fun learning together with me.
         </p>
-        <button id="myBtn" onclick="myFunction()">Play</button>
+        <a href="Tutorial.html" target="_parent"><button>Tutorial</button></a>
+        <a href="signup.html" target="_parent"><button>Sign Up</button></a>
       </div>
-      <script>
-        var video = document.getElementById("BgVideo");
-        var btn = document.getElementById("myBtn");
+      <br />
+      <br />
+      <main>
+        <div>
+          <h2>HTML</h2>
+          <p>
+            HTML (HyperText Markup Language) is the standard markup language for
+            creating web pages. It consists of a series of elements, such as
+            headings, paragraphs, images, and links. HTML is used to structure
+            and present content on a webpage.
+          </p>
+        </div>
+        <br />
+        <br />
 
-        function myFunction() {
-          if (video.paused) {
-            video.play();
-            btn.innerHTML = "Pause";
-          } else {
-            video.pause();
-            btn.innerHTML = "Play";
-          }
-        }
-      </script>
-    </div>
-
-    <div>
-      <h2>HTML</h2>
-      <p>
-        HTML (HyperText Markup Language) is the standard markup language for
-        creating web pages. It consists of a series of elements, such as
-        headings, paragraphs, images, and links. HTML is used to structure and
-        present content on a webpage.
-      </p>
-    </div>
-    <h2>CSS</h2>
-    <p>
-      CSS (Cascading Style Sheets) is a style sheet language used to describe
-      the look and formatting of a document written in HTML. CSS is used to add
-      colors, fonts, and other visual elements to web pages.
-    </p>
-    <h2>JavaScript</h2>
-    <p>
-      JavaScript is a programming language that adds interactivity to web pages.
-      JavaScript can be used to create dynamic and interactive web content,
-      handle form submissions, and perform server-side processing. JavaScript is
-      widely used in web development, making it a crucial skill for developers.
-    </p>
-    <h2>Additional Resources</h2>
-    <ul>
-      <li><a href="https://www.w3schools.com/html/">HTML Tutorial</a></li>
-      <li><a href="https://www.w3schools.com/css/">CSS Tutorial</a></li>
-      <li><a href="https://www.w3schools.com/js/">JavaScript Tutorial</a></li>
-    </ul>
-    <p>
-      If you have any further questions or need assistance with any of these
-      topics, please don't hesitate to ask.
-    </p>
-    <footer>
-      <hr />
-      <div class="footer">
-        <p>�� 2023 Clement Hansel. All rights reserved.</p>
+        <h2>CSS</h2>
         <p>
-          Contact me at
-          <a href="mailto:greedybugz@gmail.com">greedybugz@gmail.com</a>
+          CSS (Cascading Style Sheets) is a style sheet language used to
+          describe the look and formatting of a document written in HTML. CSS is
+          used to add colors, fonts, and other visual elements to web pages.
         </p>
-      </div>
-    </footer>
+        <br />
+        <br />
+
+        <h2>JavaScript</h2>
+        <p>
+          JavaScript is a programming language that adds interactivity to web
+          pages. JavaScript can be used to create dynamic and interactive web
+          content, handle form submissions, and perform server-side processing.
+          JavaScript is widely used in web development, making it a crucial
+          skill for developers.
+        </p>
+        <br />
+        <br />
+
+        <h2>Additional Resources</h2>
+        <ul>
+          <li><a href="https://www.w3schools.com/html/">HTML Tutorial</a></li>
+          <li><a href="https://www.w3schools.com/css/">CSS Tutorial</a></li>
+          <li>
+            <a href="https://www.w3schools.com/js/">JavaScript Tutorial</a>
+          </li>
+        </ul>
+        <br />
+        <br />
+        <p>
+          If you have any further questions or need assistance with any of these
+          topics, please don't hesitate to contact me.
+        </p>
+      </main>
+      <br />
+      <br />
+      <footer>
+        <hr />
+        <div class="footer">
+          <p>�� 2023 Clement Hansel. All rights reserved.</p>
+          <p>
+            Contact me at
+            <a href="mailto:greedybugz@gmail.com">greedybugz@gmail.com</a>
+          </p>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
