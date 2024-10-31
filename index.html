@@ -10,6 +10,8 @@
     <meta name="author" content="Clement Hansel" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="Index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="index.js" async></script>
     <title>Fun Time | Training Web</title>
   </head>
   <body>
@@ -17,7 +19,7 @@
       <div class="header">
         <div class="nav">
           <div class="Logo-gp">
-            <img class="logo" src="Logo.jpg" alt="Logo" />
+            <img class="logo" src="Assets/Logo.jpg" alt="Logo" />
             <div class="Logo-text">FUNTIME</div>
           </div>
           <div class="nav-menu">
@@ -33,7 +35,7 @@
           </div>
         </div>
         <video autoplay muted loop class="bg-vid">
-          <source src="Background1.mp4" />
+          <source src="Assets/Background1.mp4" />
           Your browser does not support HTML5 video.
         </video>
         <div class="header-content">
@@ -52,66 +54,176 @@
           </p>
 
           <div class="button-container">
-            <button id="btn">Explore More</button>
             <a class="button" href="Tutorial.html">Explore</a>
             <a class="button" href="portofolio.html">About Me</a>
           </div>
         </div>
       </div>
-
-      <section class="section-html">
-        <img class="module-logo" src="html.jpg" alt="html logo" />
-        <div class="html_module_container">
-          <h3>HTML Module</h3>
-          <p>
-            In this module we will learn more about HTML and its function in
-            building a web structure
-          </p>
-          <button class="boton-elegante" onclick="myFunction()">Explore</button>
-          <script>
-            function myFunction() {
-              location.replace("signup.html")
-            }
-            </script>
-        </div>
-      </section>
-
-      <section class="section-css">
-        <img class="module-logo" src="css.jpg" alt="css logo" />
-        <div class="css_module_container">
-          <h3>CSS Module</h3>
-          <p>
-            In this module we will learn more about css and its function to
-            style a web page
-          </p>
-          <button class="boton-elegante" onclick="myFunction()">Explore</button>
-          <script>
-            function myFunction() {
-              location.replace("signup.html")
-            }
-            </script>
-        </div>
-      </section>
-
-      <section class="section-js">
-        
-        <img class="module-logo" src="js.jpg" alt="js logo" />
-        <div class="js_module_container">
-          <h3>JavaScript Module</h3>
-          <p>
-            In this module we will learn more about JavaScript and its function
-            to make a web page responsive and able to interact with user
-          </p>
-          <button class="boton-elegante" onclick="myFunction()">Explore</button>
-          <script>
-            function myFunction() {
-              location.replace("signup.html")
-            }
-            </script>
+      <section class="modules">
+        <div class="section-html">
+          <img class="module-logo" src="Assets/html.jpg" alt="html logo" />
+          <div class="html_module_container">
+            <h3 class="module-fonts">HTML Module</h3>
+            <p>
+              In this module we will learn more about HTML and its function in
+              building a web structure
+            </p>
+            <button class="button-elegant" onclick="myFunction1()">
+              Learn More
+            </button>
           </div>
+        </div>
+        <div></div>
 
+        <div></div>
+
+        <div class="section-css">
+          <img class="module-logo" src="Assets/css.jpg" alt="css logo" />
+          <div class="css_module_container">
+            <h3 class="module-fonts">CSS Module</h3>
+            <p>
+              In this module we will learn more about css and its function to
+              style a web page
+            </p>
+            <button class="button-elegant" onclick="myFunction2()">
+              Learn More
+            </button>
+          </div>
+        </div>
+
+        <div class="section-js">
+          <img class="module-logo" src="Assets/js.jpg" alt="js logo" />
+          <div class="js_module_container">
+            <h3>JavaScript Module</h3>
+            <p>
+              In this module we will learn more about JavaScript and its
+              function to make a web page responsive and able to interact with
+              user
+            </p>
+            <button class="button-elegant" onclick="myFunction3()">
+              Learn More
+            </button>
+          </div>
         </div>
       </section>
+      <section class="testimonial-grid">
+        <article
+          class="testimonial grid-col-span-2 flow bg-primary-400 quote text-neutral-100"
+        >
+          <div class="flex">
+            <div>
+              <img src="Assets/daniel-clifford.jpg" alt="daniel clifford" />
+            </div>
+            <div>
+              <h2 class="name">Daniel Clifford</h2>
+              <p class="position">Verified Graduate</p>
+            </div>
+          </div>
+          <p>
+            I received a job offer mid-course, and the subjects I learned were
+            current, if not more so, in the company I joined. I honestly feel I
+            got every penny’s worth.
+          </p>
+          <p>
+            “ I was an EMT for many years before I joined the bootcamp. I’ve
+            been looking to make a transition and have heard some people who had
+            an amazing experience here. I signed up for the free intro course
+            and found it incredibly fun! I enrolled shortly thereafter. The next
+            12 weeks was the best - and most grueling - time of my life. Since
+            completing the course, I’ve successfully switched careers, working
+            as a Software Engineer at a VR startup. ”
+          </p>
+        </article>
+        <article class="testimonial flow bg-secondary-400 text-neutral-100">
+          <div class="flex">
+            <div>
+              <img src="Assets/jonathan-walters.jpg" alt="Jonathan Walters" />
+            </div>
+            <div>
+              <h2 class="name">Jonathan Walters</h2>
+              <p class="position">Verified Graduate</p>
+            </div>
+          </div>
+          <p>The team was very supportive and kept me motivated</p>
+          <p>
+            “ I started as a total newbie with virtually no coding skills. I now
+            work as a mobile engineer for a big company. This was one of the
+            best investments I’ve made in myself. ”
+          </p>
+        </article>
+        <article class="testimonial flow bg-neutral-100 text-secondary-400">
+          <div class="flex">
+            <div>
+              <img src="Assets/jeanette-harmon.jpg" alt="Jeanette Harmon" />
+            </div>
+            <div>
+              <h2 class="name">Jeanette Harmon</h2>
+              <p class="position">Verified Graduate</p>
+            </div>
+          </div>
+          <p>An overall wonderful and rewarding experience</p>
+          <p>
+            “ Thank you for the wonderful experience! I now have a job I really
+            enjoy, and make a good living while doing something I love. ”
+          </p>
+        </article>
+        <article
+          class="testimonial grid-col-span-2 flow bg-secondary-500 text-neutral-100"
+        >
+          <div class="flex">
+            <div>
+              <img
+                class="border-primary-400"
+                src="Assets/patrick-abrams.jpg"
+                alt="Patrick Abrams"
+              />
+            </div>
+            <div>
+              <h2 class="name">Patrick Abrams</h2>
+              <p class="position">Verified Graduate</p>
+            </div>
+          </div>
+          <p>
+            Awesome teaching support from TAs who did the bootcamp themselves.
+            Getting guidance from them and learning from their experiences was
+            easy.
+          </p>
+          <p>
+            “ The staff seem genuinely concerned about my progress which I find
+            really refreshing. The program gave me the confidence necessary to
+            be able to go out in the world and present myself as a capable
+            junior developer. The standard is above the rest. You will get the
+            personal attention you need from an incredible community of smart
+            and amazing people. ”
+          </p>
+        </article>
+        <article class="testimonial flow bg-neutral-100 text-secondary-400">
+          <div class="flex">
+            <div>
+              <img src="Assets/kira-whittle.jpg" alt="Kira Whittle" />
+            </div>
+            <div>
+              <h2 class="name">Kira Whittle</h2>
+              <p class="position">Verified Graduate</p>
+            </div>
+          </div>
+          <p>Such a life-changing experience. Highly recommended!</p>
+          <p>
+            “ Before joining the bootcamp, I’ve never written a line of code. I
+            needed some structure from professionals who can help me learn
+            programming step by step. I was encouraged to enroll by a former
+            student of theirs who can only say wonderful things about the
+            program. The entire curriculum and staff did not disappoint. They
+            were very hands-on and I never had to wait long for assistance. The
+            agile team project, in particular, was outstanding. It took my
+            learning to the next level in a way that no tutorial could ever
+            have. In fact, I’ve often referred to it during interviews as an
+            example of my developent experience. It certainly helped me land a
+            job as a full-stack developer after receiving multiple offers. 100%
+            recommend! ”
+          </p>
+        </article>
+      <section/>
     </main>
   </body>
 </html>

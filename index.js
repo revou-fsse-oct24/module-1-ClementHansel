@@ -1,5 +1,11 @@
-$(function () {
-  $(".preload").fadeOut(500, function () {
-    $(".content").fadeIn(1000);
-  });
-});
+function myFunction1() {
+  location.replace("signup.html");
+}
+
+function myFunction2() {
+  location.replace("signup.html");
+}
+
+function myFunction3() {
+  location.replace("signup.html");
+}
