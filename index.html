@@ -13,105 +13,105 @@
     <title>Fun Time | Training Web</title>
   </head>
   <body>
-    <div class="header">
-      <video autoplay muted loop class="bg-vid">
-        <source src="Background1.mp4" />
-        Your browser does not support HTML5 video.
-      </video>
-
-      <div class="nav">
-        <div class="Logo-text">FUNTIME</div>
-        <div class="search-box">
-          <input type="text" placeholder="Search.." />
+    <main>
+      <div class="header">
+        <div class="nav">
+          <div class="Logo-gp">
+            <img class="logo" src="Logo.jpg" alt="Logo" />
+            <div class="Logo-text">FUNTIME</div>
+          </div>
+          <div class="nav-menu">
+            <div class="search-box">
+              <input type="text" placeholder="Search.." />
+            </div>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="Tutorial.html">Tutorial</a></li>
+              <li><a href="portofolio.html">About Me</a></li>
+              <li><a href="Contactus.html">Contact Us</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="nav-menu">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="Tutorial.html">Tutorial</a></li>
-            <li><a href="Contactus.html">Contact Us</a></li>
-          </ul>
+        <video autoplay muted loop class="bg-vid">
+          <source src="Background1.mp4" />
+          Your browser does not support HTML5 video.
+        </video>
+        <div class="header-content">
+          <h1>Welcome to Clement Hansel's Learning Journey!</h1>
+          <p>
+            This is a simple website created to demonstrate my learning
+            experience towards my study at REVOU Class. In this page, I will
+            show you how to create a web using
+            <dfn
+              ><abbr title="Cascading Style Sheets"
+                >HTML, CSS, and JavaScript.</abbr
+              ></dfn
+            >
+            Please feel free to follow my learning journey, and I hope you will
+            have some fun learning together with me.
+          </p>
+
+          <div class="button-container">
+            <button id="btn">Explore More</button>
+            <a class="button" href="Tutorial.html">Explore</a>
+            <a class="button" href="portofolio.html">About Me</a>
+          </div>
         </div>
       </div>
 
-      <div class="header-content">
-        <h1>Welcome to Clement Hansel's Learning Journey!</h1>
-        <p>
-          This is a simple website created to demonstrate my learning experience
-          towards my study at REVOU Class. In this page, I will show you how to
-          create a web using
-          <dfn
-            ><abbr title="Cascading Style Sheets"
-              >HTML, CSS, and JavaScript.</abbr
-            ></dfn
-          >
-          Please feel free to follow my learning journey, and I hope you will
-          have some fun learning together with me.
-        </p>
-        <a href="Tutorial.html" target="_parent"><button>Tutorial</button></a>
-        <a href="signup.html" target="_parent"><button>Sign Up</button></a>
-      </div>
-      <br />
-      <br />
-      <main>
-        <div>
-          <h2>HTML</h2>
+      <section class="section-html">
+        <img class="module-logo" src="html.jpg" alt="html logo" />
+        <div class="html_module_container">
+          <h3>HTML Module</h3>
           <p>
-            HTML (HyperText Markup Language) is the standard markup language for
-            creating web pages. It consists of a series of elements, such as
-            headings, paragraphs, images, and links. HTML is used to structure
-            and present content on a webpage.
+            In this module we will learn more about HTML and its function in
+            building a web structure
           </p>
+          <button class="boton-elegante" onclick="myFunction()">Explore</button>
+          <script>
+            function myFunction() {
+              location.replace("signup.html")
+            }
+            </script>
         </div>
-        <br />
-        <br />
+      </section>
 
-        <h2>CSS</h2>
-        <p>
-          CSS (Cascading Style Sheets) is a style sheet language used to
-          describe the look and formatting of a document written in HTML. CSS is
-          used to add colors, fonts, and other visual elements to web pages.
-        </p>
-        <br />
-        <br />
-
-        <h2>JavaScript</h2>
-        <p>
-          JavaScript is a programming language that adds interactivity to web
-          pages. JavaScript can be used to create dynamic and interactive web
-          content, handle form submissions, and perform server-side processing.
-          JavaScript is widely used in web development, making it a crucial
-          skill for developers.
-        </p>
-        <br />
-        <br />
-
-        <h2>Additional Resources</h2>
-        <ul>
-          <li><a href="https://www.w3schools.com/html/">HTML Tutorial</a></li>
-          <li><a href="https://www.w3schools.com/css/">CSS Tutorial</a></li>
-          <li>
-            <a href="https://www.w3schools.com/js/">JavaScript Tutorial</a>
-          </li>
-        </ul>
-        <br />
-        <br />
-        <p>
-          If you have any further questions or need assistance with any of these
-          topics, please don't hesitate to contact me.
-        </p>
-      </main>
-      <br />
-      <br />
-      <footer>
-        <hr />
-        <div class="footer">
-          <p>�� 2023 Clement Hansel. All rights reserved.</p>
+      <section class="section-css">
+        <img class="module-logo" src="css.jpg" alt="css logo" />
+        <div class="css_module_container">
+          <h3>CSS Module</h3>
           <p>
-            Contact me at
-            <a href="mailto:greedybugz@gmail.com">greedybugz@gmail.com</a>
+            In this module we will learn more about css and its function to
+            style a web page
           </p>
+          <button class="boton-elegante" onclick="myFunction()">Explore</button>
+          <script>
+            function myFunction() {
+              location.replace("signup.html")
+            }
+            </script>
         </div>
-      </footer>
-    </div>
+      </section>
+
+      <section class="section-js">
+        
+        <img class="module-logo" src="js.jpg" alt="js logo" />
+        <div class="js_module_container">
+          <h3>JavaScript Module</h3>
+          <p>
+            In this module we will learn more about JavaScript and its function
+            to make a web page responsive and able to interact with user
+          </p>
+          <button class="boton-elegante" onclick="myFunction()">Explore</button>
+          <script>
+            function myFunction() {
+              location.replace("signup.html")
+            }
+            </script>
+          </div>
+
+        </div>
+      </section>
+    </main>
   </body>
 </html>
