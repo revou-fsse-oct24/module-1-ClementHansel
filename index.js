@@ -1,11 +1,11 @@
 function myFunction1() {
-  location.replace("signup.html");
+  location.replace("Tutorial.html");
 }
 
 function myFunction2() {
-  location.replace("signup.html");
+  location.replace("Tutorial.html");
 }
 
 function myFunction3() {
-  location.replace("signup.html");
+  location.replace("Tutorial.html");
 }
