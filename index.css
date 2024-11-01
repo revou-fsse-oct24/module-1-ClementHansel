@@ -519,3 +519,116 @@ h3 {
 .testimonial > p:last-of-type {
   opacity: 0.7;
 }
+
+.signup-container {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 80%;
+  border-radius: 20px;
+  background-color: #7834de;
+  text-align: center;
+  padding: 50px;
+}
+
+.signup {
+  display: flex;
+  flex-direction: column;
+  font-weight: bolder;
+  gap: 20px;
+}
+
+.footer-container {
+  display: inline-flex;
+  margin-top: 20px;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #cdd7d7;
+  align-items: top;
+}
+
+.footer-logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 70vw;
+  padding: 10px;
+}
+
+.footer-logo {
+  width: 80px;
+  height: 50px;
+  position: relative;
+  align-items: center;
+  display: flex;
+}
+
+.footer-logo-text {
+  position: relative;
+  display: flex;
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  align-items: center;
+}
+
+.footer-links1-internal {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  margin: top auto;
+  padding: 10px;
+  text-align: center;
+  gap: 15px;
+  width: 20%;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.footer-links1-internal a {
+  text-decoration: none;
+}
+
+.footer-links2-external {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  margin: top auto;
+  padding: 10px;
+  text-align: center;
+  gap: 15px;
+  width: 20%;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.footer-links2-external a {
+  text-decoration: none;
+}
+
+.footer-link3-sosmed {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+  gap: 15px;
+  width: 20%;
+}
+
+.social-media-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.footer-copyright {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  margin: 10px;
+}
